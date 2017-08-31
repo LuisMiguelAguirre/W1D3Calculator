@@ -83,6 +83,13 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
 
+            currentValue = tvResult.getText().toString();
+            if (currentValue.contains(".00")){
+                currentValue = currentValue.replace(".00", "");
+                tvResult.setText(currentValue);
+            }
+
+
         }
     }
 
